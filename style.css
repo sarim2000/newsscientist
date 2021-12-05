@@ -1,0 +1,291 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MY CSS STARTS FROM HERE */
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"header header header"
+		"down   .      downright";
+	justify-items: center;
+	margin-top: 2em;
+	width: 100vw;
+	max-width: 1100px;
+}
+.menu-list {
+	grid-area: down;
+}
+.details-list {
+	grid-area: downright;
+}
+.navleft {
+	align-self: center;
+	justify-self: start;
+	grid-area: header;
+}
+.navright {
+	align-self: center;
+	grid-area: header;
+
+	justify-self: end;
+}
+.navcenter {
+	align-self: center;
+	font-size: 4em;
+	grid-area: header;
+
+	font-weight: 900;
+}
+.navbarwrapper {
+	margin: 0 auto;
+	padding: 0 0.93747rem;
+	position: relative;
+	max-width: 70.62495rem;
+}
+.navtop {
+	margin-bottom: 0.6875rem;
+	padding: 0;
+}
+
+.navlefttitle {
+	color: #00b3e5;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.1875rem;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.navleftdesc {
+	font-size: 1rem;
+	color: gray;
+	font-weight: 100;
+	max-width: 250px;
+	line-height: 1.1875rem;
+	margin: 0;
+}
+
+.menu-list ul,
+.details-list ul {
+	display: flex;
+	padding: 10px;
+}
+
+.menu-list li,
+.details-list li {
+	padding: 5px;
+}
+
+.downborder {
+	border: 1px solid gray;
+	margin-bottom: 2em;
+}
+
+.latestcontainer {
+	height: 80px;
+}
+.content h1 {
+	font-size: 2.9em;
+	font-weight: 900;
+}
+.maincontent {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	width: 100vw;
+	max-width: 1100px;
+	grid-gap: 10px;
+}
+.innericons {
+	display: flex;
+	margin-top: 1em;
+}
+.icon {
+	padding: 10px;
+	height: 15px;
+	width: 15px;
+	margin-right: 10px;
+	border-radius: 100%;
+	background-color: #00b3e5;
+}
+.innerText {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: rgb(206, 205, 205);
+}
+.innerText p {
+	padding: 10px;
+}
+
+.imgblock {
+	padding: 10px;
+	height: 250px;
+	width: 185px;
+	margin-left: 50px;
+	/* border-radius: 100%; */
+	background-color: #00b3e5;
+}
+
+.card {
+	height: 125px;
+	width: 300px;
+	background-color: gray;
+}
+.card h1 {
+	font-size: x-large;
+	padding: 10px;
+}
+.wrapper1 {
+	display: flex;
+	width: 100vw;
+	max-width: 1100px;
+}
+.titleAd {
+	font-size: x-large;
+	float: left;
+}
+.infobox {
+	height: 258px;
+	background-color: red;
+}
+.items {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(20px, 250px));
+	grid-gap: 1px;
+	column-gap: 2px;
+}
+
+.maincontent1 {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	max-width: 1100px;
+}
+.email {
+}
